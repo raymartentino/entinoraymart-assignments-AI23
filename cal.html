@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="cal.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <title>Calculator</title>
+ 
+</head>
+<body>
+  <div ng-app="mainApp" align="center">
+    <h2>Calculator</h2>
+    <div ng-controller="CalCtrl" id="con">
+        <table id="contain" >
+            <tr>
+                <td colspan="4">
+                    <input type="text" style="text-align:center; width: 236px; height:30px" name="output" id="res" value="{{output}}" disabled = "disabled">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <button title="Number 7" style="width:56px" ng-click="press('7')" class="numbutton">7</button>&nbsp
+                    <button title="Number 8" style="width:56px" ng-click="press('8')" class="numbutton">8</button>&nbsp
+                    <button title="Number 9" style="width:56px" ng-click="press('9')" class="numbutton">9</button>&nbsp
+                    <button title="Operate +" style="width:56px" ng-click='operate("+")' class="operatebutton">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <button style="width:56px" ng-click="press('4')" class="numbutton">4</button>&nbsp
+                    <button style="width:56px" ng-click="press('5')" class="numbutton">5</button>&nbsp
+                    <button style="width:56px" ng-click="press('6')" class="numbutton">6</button>&nbsp
+                    <button title="Operate -" style="width:56px" ng-click='operate("-")' class="operatebutton" >-</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <button title="Number 1" style="width:56px" ng-click="press('1')" class="numbutton">1</button>&nbsp
+                    <button title="Number 2" style="width:56px" ng-click="press('2')" class="numbutton">2</button>&nbsp
+                    <button title="Number 3" style="width:56px" ng-click="press('3')" class="numbutton">3</button>&nbsp
+                    <button title="Operate *" style="width:56px" ng-click='operate("*")' class="operatebutton">x</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button title="Number 0" style="width:56px" ng-click="press('0')" class="numbutton">0</button>&nbsp
+                    <button title="." style="width:56px" ng-click="press('.')" class="numbutton">.</button>&nbsp
+                    <button title="Clear all" style="width:56px" ng-click="output = '0'" class="operatebutton">C</button>&nbsp
+                    <button title="Operate ÷" style="width:56px" ng-click='operate("/")' class="operatebutton">÷</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button style="width:183px" ng-click="equal()" class="operatebutton">=</button>&nbsp
+                    <button title="Delete" style="width:56px" ng-click="press('x')" class="operatebutton">Del</button>
+                </td>
+            </tr>
+        </table>
+        <span align="center" style="color:red">{{msg}}</span>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js">
+     
+
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+table, th, td, tr {
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+table {
+	width: 272px;
+	height: 400px;
+
+}
+input {
+	background-color: white;
+	border: 3px solid gray;
+	font-size: 20px;
+	font-weight: bolder; 
+}
+#contain {
+	background-color: #7777;
+}
+button {
+	height: 60px;
+}
+.numbutton {
+	background-color: #0375B4;
+	color: white;
+	font-weight: bolder;
+	font-size: 25px;
+	border: 4px solid white;
+}
+.operatebutton {
+	background-color: #008F95;
+	color: white;
+	font-weight: bolder;
+	font-size: 25px;
+	border: 4px solid white;
+}
+
+#con {
+	background-color: black;
+	width: 20%;
+	height: 100%;
+	padding: 50px;
+	border: 1px solid #ccc;
+}
